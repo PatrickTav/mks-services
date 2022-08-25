@@ -2,7 +2,7 @@ import React from 'react'
 import { Aside } from './styled'
 
 type Props={
-  active:any
+  active?:any
 }
 
 

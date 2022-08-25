@@ -1,4 +1,4 @@
-import { type } from "os";
+
 import React from "react";
 import ProductsCar from "../ProductsCar";
 import { Container } from "./style";

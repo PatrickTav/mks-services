@@ -1,5 +1,7 @@
 
 import {Card} from './styled'
+import {useDispatch} from 'react-redux' 
+import { increment } from '../../redux/counterProducts'
  
 type Props={
   name:string,
@@ -9,12 +11,17 @@ type Props={
   key:number
 }
 
+// type actionsProps={
+//   onClick?: () => void
+// }
 
 const CardProduct = ({key,name, description, price, photo}:Props) => {
 
+  const dispatch = useDispatch()
+  
   return (
     <>
-       <Card>
+       <Card >
           <div className="photo_product">
             <img src={photo} alt="kkajskjd" />
           </div>
@@ -26,7 +33,7 @@ const CardProduct = ({key,name, description, price, photo}:Props) => {
           <div className='description'>
             {description}
           </div>
-          <button className='buy'>COMPRAR</button>
+          <button onClick={()=> dispatch(increment())} className='buy'>COMPRAR</button>
        </Card>
     </>
   )
