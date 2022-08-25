@@ -13,4 +13,4 @@ Abra [http://localhost:3000](http://localhost:3000) para ver o resultado da apli
 
 ## Deploy na Vercel
 
-Veja a aplicação no ar [Next.js deployment documentation](https://nextjs.org/docs/deployment).
+Veja a aplicação no ar [Projeto em execução](https://mkss-services.vercel.app/).
