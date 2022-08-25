@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
 import { CarContainer } from "./styled";
 
 type Props={
   onClick?: () => void
 }
 
-
 const ProductsCar = (onClick:Props) => {
 
+  const {value} = useSelector((state:RootState)=>state.counter)
 
 
 
@@ -15,7 +17,7 @@ const ProductsCar = (onClick:Props) => {
     <div>
       <CarContainer>
         <img src="/Vector.svg" alt="Productscar" />
-        <span>0</span>
+        <span>{value}</span>
       </CarContainer>
     </div>
   );
