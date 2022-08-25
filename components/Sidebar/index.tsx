@@ -18,6 +18,8 @@ const Sidebar = ({active}:Props) => {
           <span onClick={handleCloseNavbar}>X</span>
         </div>
 
+        
+
         <footer>
           <button> Finalizar Compra</button>
         </footer>
