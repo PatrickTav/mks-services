@@ -31,4 +31,16 @@ export const Aside = styled.aside`
     text-align: center;
     cursor: pointer;
   }
+
+  footer button{
+    position: absolute;
+    bottom: 0;
+    height: 4rem;
+    background-color: #000;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+  }
 ` 
